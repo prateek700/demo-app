@@ -1,8 +1,10 @@
 version: '3.7'
 services:
-  demo-app:
+  demo-app1:
     image: prateek700/demo-app:latest
     ports:
-      - "3000:3000"
-    deploy:
-      replicas: 2
+      - "3001:3000"
+  demo-app2:
+    image: prateek700/demo-app:latest
+    ports:
+      - "3002:3000"
